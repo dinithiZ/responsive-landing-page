@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@media (min-width: 1199px) and (max-width: 1201px) {
+  .footer-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: 1fr !important;
+  }
+  .footer-logo {
+    grid-column: 1 / 2 !important;
+  }
+  .footer-technologies {
+    grid-column: 2 / 3 !important;
+  }
+  .footer-services {
+    grid-column: 3 / 4 !important;
+  }
+}
+@media (min-width: 374px) and (max-width: 376px), /* around 375px */
+       (min-width: 767px) and (max-width: 769px)   /* around 768px */ {
+  .hero-text {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
